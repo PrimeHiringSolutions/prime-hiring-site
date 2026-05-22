@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime Hiring Solutions | Optimizing Workforce Delivery</title>
+    <title>Prime Hiring Solutions | Precision • Passion • People</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,86 +11,254 @@
     <header class="site-header">
         <div class="container nav-container">
             <div class="logo">
-                <a href="#">
+                <a href="#home">
                     <span class="logo-text-blue">PRIME</span><span class="logo-text-teal"> HIRING SOLUTIONS</span>
                 </a>
             </div>
             
             <nav class="main-nav">
                 <ul class="nav-links">
-                    <li><a href="#about">About PHS</a></li>
+                    <li><a href="#about-section">About PHS</a></li>
                     <li class="dropdown">
-                        <a href="#services">Service Offerings ▾</a>
+                        <a href="#services-section" class="dropdown-toggle">Service Offerings ▾</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#healthcare">Healthcare</a></li>
-                            <li><a href="#it">Information Technology</a></li>
-                            <li><a href="#shared-services">Shared Services</a></li>
+                            <li><a href="#healthcare-detail">Healthcare</a></li>
+                            <li><a href="#it-detail">Information Technology</a></li>
+                            <li><a href="#shared-detail">Shared Services</a></li>
                         </ul>
                     </li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
             </nav>
 
             <div class="header-actions">
-                <a href="#find-jobs" class="btn btn-secondary">Find Jobs</a>
-                <a href="#partner" class="btn btn-primary">Partner With Us</a>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact-section')">Find Jobs</button>
+                <button class="btn btn-primary" onclick="scrollToSection('contact-section')">Partner With Us</button>
             </div>
 
             <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container hero-content">
-            <h1>Precision • Passion • People</h1>
-            <p class="subtitle">Optimizing Workforce Delivery.</p>
-            <div class="hero-search">
-                <input type="text" placeholder="Search open roles, skills, or locations...">
-                <button class="btn btn-primary">Search</button>
+    <main>
+        
+        <section id="home" class="hero-viewport">
+            <div class="container hero-content">
+                <span class="motto-badge">Precision • Passion • People</span>
+                <h1>Optimizing Workforce Delivery</h1>
+                <p class="subtitle">Enterprise-grade talent acquisition across specialized medical, technological, and corporate ecosystems.</p>
+                <div class="hero-search">
+                    <input type="text" placeholder="Search open roles (e.g., V&V Engineer, Travel Nurse, Financial Analyst)...">
+                    <button class="btn btn-primary">Search Roles</button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2>Our Service Offerings</h2>
-            <div class="service-grid">
-                
-                <div class="service-card">
-                    <div class="card-indicator"></div>
-                    <h3>Healthcare</h3>
-                    <p>Connecting top-tier nursing, allied, and mental health professionals with facilities nationwide.</p>
-                    <a href="#healthcare" class="text-link">Explore Healthcare Roles →</a>
+        <section id="services-section" class="section-padding bg-white">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Service Offerings</h2>
+                    <p>Tailored workforce strategies built to scale operational capacities seamlessly.</p>
                 </div>
-
-                <div class="service-card">
-                    <div class="card-indicator"></div>
-                    <h3>Information Technology</h3>
-                    <p>Expert staffing for Cyber Security, Cloud Infrastructure, AI, and Custom Project Solutions.</p>
-                    <a href="#it" class="text-link">Explore IT Roles →</a>
+                <div class="service-grid">
+                    <div class="service-card" onclick="scrollToSection('healthcare-detail')">
+                        <div class="card-indicator"></div>
+                        <h3>Healthcare Staffing</h3>
+                        <p>Providing clinical excellence through workforce delivery frameworks modeled after leading medical standards.</p>
+                        <span class="text-link">Explore Ecosystem →</span>
+                    </div>
+                    <div class="service-card" onclick="scrollToSection('it-detail')">
+                        <div class="card-indicator"></div>
+                        <h3>Information Technology</h3>
+                        <p>Custom project staffing, statement of work execution, and advanced digital transformation placement.</p>
+                        <span class="text-link">Explore Ecosystem →</span>
+                    </div>
+                    <div class="service-card" onclick="scrollToSection('shared-detail')">
+                        <div class="card-indicator"></div>
+                        <h3>Shared Services</h3>
+                        <p>Optimizing centralized support networks across engineering talent, financial governance, and GCC operations.</p>
+                        <span class="text-link">Explore Ecosystem →</span>
+                    </div>
                 </div>
-
-                <div class="service-card">
-                    <div class="card-indicator"></div>
-                    <h3>Shared Services</h3>
-                    <p>Scalable talent for Engineering, Accounting, and Global Capability Center Support (GCC).</p>
-                    <a href="#shared-services" class="text-link">Explore Shared Services →</a>
-                </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="healthcare-detail" class="section-padding bg-light">
+            <div class="container">
+                <div class="segment-grid">
+                    <div class="segment-info">
+                        <span class="segment-tag">Clinical Workforce</span>
+                        <h2>Healthcare Solutions</h2>
+                        <p>Partnering with clinics, systems, schools, and care agencies to ensure absolute coverage and pristine compliance tracking.</p>
+                        <div class="sub-verticals">
+                            <div class="vertical-pill">Travel & Local Nursing</div>
+                            <div class="vertical-pill">Allied Health</div>
+                            <div class="vertical-pill">Mental & Behavioral Health</div>
+                            <div class="vertical-pill">Home Health & Hospice</div>
+                            <div class="vertical-pill">School Systems</div>
+                        </div>
+                    </div>
+                    <div class="segment-roles">
+                        <h4>Specialized Core Disciplines Placed:</h4>
+                        <ul class="role-list">
+                            <li>Registered Nurses (RNs)</li>
+                            <li>Travel Specialists & NPs</li>
+                            <li>Licensed Practical / Vocational Nurses</li>
+                            <li>Certified Nursing Assistants (CNAs)</li>
+                            <li>Advanced Practice Specialists</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="it-detail" class="section-padding bg-white">
+            <div class="container">
+                <div class="segment-grid inverse">
+                    <div class="segment-roles">
+                        <h4>Enterprise Capability Matrix:</h4>
+                        <div class="tech-matrix">
+                            <div class="matrix-box"><h5>Digital Experience</h5><p>UI/UX Design & Front-End Engineering</p></div>
+                            <div class="matrix-box"><h5>Infrastructure</h5><p>Cloud Architecture, DevOps, & Cybersecurity Systems</p></div>
+                            <div class="matrix-box"><h5>Data Intelligence</h5><p>Artificial Intelligence, Advanced Analytics, & Big Data</p></div>
+                            <div class="matrix-box"><h5>Enterprise Architecture</h5><p>SAP & Oracle Platform Implementation</p></div>
+                        </div>
+                    </div>
+                    <div class="segment-info">
+                        <span class="segment-tag">Technical Execution</span>
+                        <h2>Information Technology</h2>
+                        <p>Deploying specialized technical resources through flexible engagement frameworks, covering local commercial industries to high-tech operational spaces.</p>
+                        <div class="sub-verticals">
+                            <div class="vertical-pill">Staffing Solutions</div>
+                            <div class="vertical-pill">Statement of Work (SOW) Delivery</div>
+                            <div class="vertical-pill">Banking & Financial Tech</div>
+                            <div class="vertical-pill">FMCG & Retail Platforms</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="shared-detail" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="segment-tag">Global Operational Delivery</span>
+                    <h2>Shared Services Verticals</h2>
+                    <p>Streamlining business capability frameworks via highly functional centralized support infrastructures.</p>
+                </div>
+                <div class="shared-grid">
+                    <div class="shared-column">
+                        <div class="column-header">⚡ Engineering</div>
+                        <p class="column-desc">Ensuring absolute product integrity, automated innovation, and strict compliance metrics.</p>
+                        <ul class="role-list density-high">
+                            <li><strong>Design Engineers:</strong> CAD/CAE modeling frameworks.</li>
+                            <li><strong>Software V&V:</strong> Embedded safety & validation verification testing.</li>
+                            <li><strong>Manufacturing Engineers:</strong> Scalable process cost optimization.</li>
+                            <li><strong>Electrical & Quality:</strong> Systems auditing, root cause analysis, and CAPA execution.</li>
+                        </ul>
+                    </div>
+                    <div class="shared-column">
+                        <div class="column-header">📊 Accounting & Finance</div>
+                        <p class="column-desc">Providing structured financial forecasting, active asset stewardship, and governance.</p>
+                        <ul class="role-list density-high">
+                            <li><strong>Staff Accountants:</strong> Ledger reconciliation & month-end closures.</li>
+                            <li><strong>AP/AR Specialists:</strong> Invoice automation & cash flow validation.</li>
+                            <li><strong>Financial Analysts:</strong> Strategic budgeting & economic modeling.</li>
+                            <li><strong>Payroll & Compliance:</strong> Multi-jurisdictional tax administrators and Internal Auditors.</li>
+                        </ul>
+                    </div>
+                    <div class="shared-column">
+                        <div class="column-header">🌐 Global Capability Centers (GCC)</div>
+                        <p class="column-desc">Powering persistent high-volume corporate voice, chat, digital, and ticketing queues.</p>
+                        <ul class="role-list density-high">
+                            <li><strong>Customer Service Reps:</strong> Multichannel empathy resolution.</li>
+                            <li><strong>Tech Support Specialists:</strong> Tier 1 & Tier 2 SLA management.</li>
+                            <li><strong>QA Analysts:</strong> Interaction evaluation & scripting compliance.</li>
+                            <li><strong>Team Leaders & WFM:</strong> Real-time volume forecasting and tracking.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-section" class="section-padding bg-white">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-main">
+                        <h2>About Prime Hiring Solutions</h2>
+                        <p class="lead">Built on precision, fueled by passion, and dedicated to people.</p>
+                        <p>We streamline enterprise workforce delivery by bridging structural technical talent gaps. Our frameworks handle full-scale workforce life cycles, allowing organizations to maintain maximum focus on organizational output while we manage deployment logistics.</p>
+                        <div class="pillars-layout">
+                            <div class="pillar-point"><strong>Our Vision:</strong> Setting the global benchmark for high-trust workforce design solutions.</div>
+                            <div class="pillar-point"><strong>Our Mission:</strong> Delivering exceptional operational talent with absolute precision, mitigating organizational friction.</div>
+                        </div>
+                    </div>
+                    <div class="about-sidebar">
+                        <div class="info-widget">
+                            <h5>Why PHS?</h5>
+                            <p>Rigorous verification metrics, industry-specific compliance management, and an adaptive delivery footprint engineered for modern scale.</p>
+                        </div>
+                        <div class="info-widget">
+                            <h5>Client Endorsements</h5>
+                            <blockquote class="testimonial-quote">
+                                "Prime Hiring Solutions completely streamlined our engineering V&V scale-up within tight project constraints. Absolute precision."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-section" class="section-padding bg-light">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-details-panel">
+                        <h2>Connect With Us</h2>
+                        <p>Let's plan your talent scaling layout or track down your next professional milestone.</p>
+                        <div class="contact-meta">
+                            <div class="meta-item">📍 <strong>Regional Hubs:</strong> San Mateo, CA & Enterprise Delivery Centers</div>
+                            <div class="meta-item">✉️ <strong>Corporate Routing:</strong> info@primehiringsolutions.com</div>
+                        </div>
+                        <div class="map-container-mock">
+                            <div class="map-graphic">[ Interactive Location Framework Map View ]</div>
+                        </div>
+                    </div>
+                    <div class="contact-form-panel">
+                        <form onsubmit="event.preventDefault(); alert('Transmission Successful. An enterprise partner representative will follow up within 1 business hour.');">
+                            <div class="form-group">
+                                <label>Identify Your Track</label>
+                                <select required>
+                                    <option value="">Select Option...</option>
+                                    <option value="employer">I am an Employer seeking Workforce Solutions</option>
+                                    <option value="candidate">I am a Professional searching for Open Roles</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group"><label>Full Name</label><input type="text" required></div>
+                                <div class="form-group"><label>Email Address</label><input type="email" required></div>
+                            </div>
+                            <div class="form-group"><label>Organizational Context / Message</label><textarea rows="4" required></textarea></div>
+                            <button type="submit" class="btn btn-primary full-width">Initialize Engagement Matrix</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <footer class="site-footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <h4>Prime Hiring Solutions</h4>
-                <p>Precision • Passion • People</p>
+                <h4>PRIME HIRING SOLUTIONS</h4>
+                <p>Precision • Passion • People: Optimizing Workforce Delivery.</p>
             </div>
-            <div class="footer-links">
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
-                <a href="/blog">Blog</a> </div>
+            <div class="footer-nav-block">
+                <a href="#about-section">Our Framework</a>
+                <a href="#services-section">Capability Directory</a>
+                <a href="#contact-section" class="highlight-link">Book Consult Meeting</a>
+                <a href="/blog" class="backend-editable">Corporate Blog (CMS)</a>
+            </div>
         </div>
     </footer>
 
